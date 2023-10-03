@@ -1,0 +1,198 @@
+:root {
+    /** CSS DARK THEME PRIMARY COLORS */
+    --color-primary-100: #000000;
+    --color-primary-200: #1e1e1e;
+    --color-primary-300: #353535;
+    --color-primary-400: #4e4e4e;
+    --color-primary-500: #696969;
+    --color-primary-600: #858585;
+    /** CSS DARK THEME SURFACE COLORS */
+    --color-surface-100: #121212;
+    --color-surface-200: #282828;
+    --color-surface-300: #3f3f3f;
+    --color-surface-400: #575757;
+    --color-surface-500: #717171;
+    --color-surface-600: #8b8b8b;
+    /** CSS DARK THEME MIXED SURFACE COLORS */
+    --color-surface-mixed-100: #111111;
+    --color-surface-mixed-200: #272727;
+    --color-surface-mixed-300: #3e3e3e;
+    --color-surface-mixed-400: #565656;
+    --color-surface-mixed-500: #707070;
+    --color-surface-mixed-600: #8b8b8b;
+
+    /** CSS LIGHT MODE THEME COLORS*/
+    --color-primary-one: #fafafa;
+    --color-primary-two: #e4e5f1;
+    --color-primary-three: #d2d3db;
+    --color-primary-four: #9394a5;
+    --color-primary-five: #3a3c5a;
+}
+
+label {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login-header {
+    display: block;
+    text-align: center;
+}
+
+.input-base {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background: var(--main-bg-light-color);
+    border-radius: 8px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 300;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.input-base:focus {
+    border-color: #ffffff;
+    outline: var(--color-surface-mixed-500) solid 2px;
+}
+
+body .input-login-icon {
+    background: url(../static/user-solid-dark.svg) no-repeat fixed, var(--color-primary-two) !important;
+    background-position: center left 5px !important;
+    padding-left: 45px;
+    background-size: 30px 30px !important;
+    position: relative;
+}
+
+body .input-password-icon {
+    background: url(../static/unlock-solid-dark.svg) no-repeat fixed, var(--color-primary-two) !important;
+    background-position: center left 5px !important;
+    padding-left: 45px;
+    background-size: 30px 30px !important;
+    position: relative;
+}
+
+body.dark-theme .input-login-icon {
+    background: url(../static/user-solid-gray.svg) no-repeat fixed, var(--color-surface-mixed-300) !important;
+    background-position: center left 5px !important;
+    padding-left: 45px;
+    background-size: 30px 30px !important;
+    position: relative;
+}
+
+body.dark-theme .input-password-icon {
+    background: url(../static/unlock-solid-gray.svg) no-repeat fixed, var(--color-surface-mixed-300) !important;
+    background-position: center left 5px !important;
+    padding-left: 45px;
+    background-size: 30px 30px !important;
+    position: relative;
+}
+
+.button-base {
+    margin-top: 20px;
+    width: auto;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.light-dark-mode-switch {
+    position: absolute;
+    padding: 10px 10px;
+    line-height: 0px;
+    border-radius: 20px;
+    margin: 0px;
+    bottom: 10px;
+    right: 10px;
+}
+
+body.dark-theme {
+    color: var(--color-primary-one);
+    background: var(--color-surface-mixed-100);
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+}
+
+body.dark-theme .input-base {
+    color: #fafafa;
+    background-color: var(--color-surface-mixed-300);
+    border: 2px solid var(--color-primary-300);
+}
+
+body.dark-theme .input-base:focus {
+    background-color: var(--color-surface-mixed-300);
+    border: 2px solid var(--color-primary-200);
+    outline: none;
+}
+
+body.dark-theme .button-base {
+    color: #fafafa;
+    background-color: var(--color-surface-mixed-300);
+}
+
+body.dark-theme .button-base:hover {
+    background-color: var(--color-surface-mixed-400);
+}
+
+.login-container {
+    height: 350px;
+    width: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 0px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+
+}
+
+body.dark-theme .login-container {
+    background-color: var(--color-surface-mixed-200);
+}
+
+body {
+    color: var(--color-primary-200);
+    background: var(--color-primary-one);
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+}
+
+body .button-base {
+    color: #fafafa;
+    background: var(--color-primary-200);
+}
+
+body .button-base:hover {
+    background: var(--color-primary-300);
+}
+
+body .input-base {
+    background: var(--color-primary-two);
+    border: 2px solid var(--color-primary-600);
+}
+
+body .input-base:focus {
+    background: var(--color-primary-two);
+    border: 2px solid var(--color-primary-200);
+    outline: none;
+}
+
+body .login-container {
+    background-color: var(--color-primary-two);
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-75 {
+    width: 75% !important;
+}
