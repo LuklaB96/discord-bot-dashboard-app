@@ -78,10 +78,11 @@
 
 .page-content {
     position: relative;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     text-wrap: wrap;
     right: 50px;
-    width: calc(100% - 250px);
+    width: calc(100% - 350px);
     top: 100px;
     left: 250px;
 }
@@ -264,8 +265,6 @@ body.dark-theme .input-password-icon {
     right: 10px;
 }
 
-#submenu-parent {}
-
 .submenu {
     position: absolute;
     width: auto;
@@ -279,10 +278,6 @@ body.dark-theme .input-password-icon {
 .submenu a:hover {
     background-color: var(--color-primary-300);
 }
-
-.submenu ul {}
-
-.submenu ul li {}
 
 .submenu-main-item {
     display: flex;
@@ -399,51 +394,76 @@ body .login-container {
     color: var(--color-primary-600)
 }
 
-.card-recent-user {
+.card-content-simple {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.card-recent-user img {
+.card-content-simple img {
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 
-.content-card {
+.card-content-simple {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-content-simple i {
+    font-size: 2rem;
+    color: var(--color-surface-600)
+}
+
+.card-base {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 1.5rem;
+    text-wrap: wrap;
+    margin: 10px;
     border: 1px solid;
     border-color: var(--color-primary-300);
+    background-color: var(--color-primary-200);
     min-width: 250px;
+    max-width: 580px;
     display: flex;
     flex-direction: column;
     -webkit-box-shadow: 8px 8px 24px -14px rgba(0, 0, 0, 1);
     -moz-box-shadow: 8px 8px 24px -14px rgba(0, 0, 0, 1);
     box-shadow: 8px 8px 24px -14px rgba(0, 0, 0, 1);
+    color: var(--color-primary-one);
 }
 
-.content-card h4 {
+.card-base:hover {
+    background-color: var(--color-primary-300);
+}
+
+.card-base h4 {
     margin: 0;
     padding: 1rem 0 0 0;
     color: var(--color-primary-500)
 }
 
-.content-card span {
-    margin: 0;
+.card-base span {
+    margin-right: 25px;
     padding: 1rem 0 0 0;
     font-size: 1.5rem;
+    text-wrap: wrap;
+    width: 75%;
+    overflow-wrap: break-word;
 }
 
 @media only screen and (max-width: 643px) {
     .left-navbar {
         top: 108px;
+        display: none;
     }
 
     .page-content {
         top: 150px;
+        left: 20%;
     }
 }
 
