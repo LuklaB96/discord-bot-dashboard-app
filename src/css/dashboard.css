@@ -107,13 +107,11 @@
     display: block;
     padding: 15px;
     text-decoration: none;
-    font-family: 'Source Sans 3', sans-serif;
-    font-weight: 400;
     margin: 0;
     width: auto;
     text-decoration: none;
     cursor: pointer;
-    background-color: var(--color-primary-300);
+    background-color: var(--color-primary-200);
 }
 
 .left-navbar a:hover {
@@ -172,7 +170,6 @@ label {
     display: block;
     margin-top: 30px;
     font-size: 16px;
-    font-weight: 600;
 }
 
 .login-header {
@@ -189,7 +186,6 @@ label {
     padding: 0 10px;
     margin-top: 8px;
     font-size: 20px;
-    font-weight: 300;
     border: 0px;
     box-sizing: border-box;
 }
@@ -235,7 +231,6 @@ body.dark-theme .input-password-icon {
     width: auto;
     padding: 15px 0;
     font-size: 18px;
-    font-weight: 600;
     border: 0px;
     cursor: pointer;
 }
@@ -256,12 +251,9 @@ body.dark-theme .input-password-icon {
     position: absolute;
     width: auto;
     display: none;
-    background-color: var(--color-primary-400);
 }
 
 .submenu a {
-    text-align: center;
-    width: 100%;
     background-color: var(--color-primary-200);
 }
 
@@ -271,18 +263,22 @@ body.dark-theme .input-password-icon {
 
 .submenu ul {}
 
-.submenu ul li {
-    width: 100%;
+.submenu ul li {}
+
+.submenu-main-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .submenu ul li a {
     display: flex;
-    text-align: center;
     width: 100%;
 }
 
 .sub-container:hover .submenu {
-    display: inline-flex;
+    display: flex;
 }
 
 .navbar-button-collapse {
@@ -347,8 +343,9 @@ body a {
 
 body {
     background: var(--color-primary-one);
-    font-family: 'Source Sans 3', sans-serif;
-    min-height: 400px;
+    font-family: 'Source Sans 3', sans-serif !important;
+    font-weight: 400;
+    min-height: 400px !important;
 }
 
 body .button-base {
