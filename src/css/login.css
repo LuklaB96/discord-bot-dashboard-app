@@ -155,6 +155,24 @@ body.dark-theme .button-base:hover {
 
 }
 
+.login-footer {
+    display: flex;
+    position: relative;
+    width: auto;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+
+.login-footer a {
+    color: var(--color-primary-500) !important;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    color: var(--color-primary-one) !important;
+    transition: 0.3s;
+}
+
 body.dark-theme .login-container {
     background-color: var(--color-surface-mixed-200);
 }

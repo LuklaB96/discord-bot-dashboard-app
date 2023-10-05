@@ -130,6 +130,7 @@
 
 .left-navbar a:hover {
     background-color: var(--color-primary-400);
+    transition: 0.3s;
 }
 
 .top-navbar ul {
@@ -180,6 +181,7 @@
 
 .top-navbar ul li a:hover {
     background-color: var(--color-primary-400);
+    transition: 0.3s;
 }
 
 label {
@@ -438,6 +440,7 @@ body .login-container {
 
 .card-base:hover {
     background-color: var(--color-primary-300);
+    transition: 0.3s;
 }
 
 .card-base h4 {
