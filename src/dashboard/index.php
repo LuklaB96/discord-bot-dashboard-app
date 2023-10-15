@@ -17,7 +17,7 @@ $user_avatar_link = "https://cdn.discordapp.com/avatars/$id/$avatar.jpg";
     <link rel="stylesheet" href="../css/dashboard.css">
     <script src="https://kit.fontawesome.com/5cbe123f3b.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script type='text/javascript' src='../js/index.js'></script>
+    <script type='module' src='../js/index.js'></script>
     <title>Document</title>
 </head>
 
@@ -175,22 +175,7 @@ $user_avatar_link = "https://cdn.discordapp.com/avatars/$id/$avatar.jpg";
             class="fa-solid fa-circle-half-stroke"></i></button>
     </div>
     <script>
-        var subMenuList = {};
-        subMenuList['submenu-parent'] = 'submenu';
-        subMenuList['submenu-parent1'] = 'submenu1';
-        $('document').ready(() => {
-            const timeout = setTimeout(function () { SetSubMenuPosition(subMenuList) }, 100);
-            const btn = document.querySelector(".btn-toggle");
 
-            btn.addEventListener("click", function () {
-                document.body.classList.toggle("dark-theme");
-            });
-        })
-
-        function RefreshSubMenu() {
-            ShowHideLeftTitles();
-            const timeout = setTimeout(function () { SetSubMenuPosition(subMenuList) }, 100);
-        }
     </script>
 </body>
 

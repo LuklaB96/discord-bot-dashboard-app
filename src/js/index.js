@@ -1,3 +1,26 @@
+import { Submenu } from './modules/Submenu.js';
+
+
+var subMenuSubscribers = {};
+// ['parent'] = target
+subMenuSubscribers['submenu-parent'] = 'submenu';
+subMenuSubscribers['submenu-parent1'] = 'submenu1';
+
+const submenu = new Submenu(subMenuSubscribers, 50);
+
+$('document').ready(() => {
+    submenu.setSubMenuPosition();
+    const btn = document.querySelector(".btn-toggle");
+
+    btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+    });
+})
+
+window.RefreshSubMenu = function () {
+    ShowHideLeftTitles();
+    submenu.setSubMenuPosition();
+}
 function ShowHideLeftTitles() {
     var spans = document.getElementsByClassName('leftNavbarTitle');
 
@@ -6,15 +29,5 @@ function ShowHideLeftTitles() {
             spans[i].style.display = 'inline-flex';
         else
             spans[i].style.display = 'none';
-    }
-}
-
-function SetSubMenuPosition(subscribers) {
-    for (var key in subscribers) {
-        var parent = document.getElementById(key);
-        var target = document.getElementById(subscribers[key]);
-        var Rect = parent.getBoundingClientRect();
-        target.style.left = Rect.width + "px";
-        target.style.top = Rect.top - (Rect.height + 1) + "px";
     }
 }

@@ -60,5 +60,5 @@ $_SESSION['data'] = [
     'avatar' => $result['avatar']
 ];
 
-//header("Location: ../dashboard/index.php");
+header("Location: ../dashboard/index.php");
 ?>
